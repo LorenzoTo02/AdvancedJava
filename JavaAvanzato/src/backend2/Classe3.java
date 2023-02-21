@@ -6,4 +6,6 @@ public abstract class Classe3 {
 	
 	public abstract void mainAdd();
 	
+	public abstract double maindos();
+	
 }
