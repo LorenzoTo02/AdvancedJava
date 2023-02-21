@@ -1,7 +1,9 @@
 package backend2;
 
-public class Classe3 {
+public abstract class Classe3 {
 
 	private int g;
+	
+	public abstract void mainAdd();
 	
 }
