@@ -6,10 +6,11 @@ public class Blog {
 
 	private String name;
 	private Article[] articles;
+	public static int count = 0;
 	
 	public Blog(String name) {
 		this.name = name;
-		this.articles = null;
+		this.articles = new Article[0];
 	}
 
 	public String getName() {
@@ -29,12 +30,18 @@ public class Blog {
 	}
 	
 	public void addArticle(Article article) {
-		if(this.articles == null) {
+
+			count++;
+			Article[] ar = new Article[count];
+			for (int i = 0; i < this.articles.length; i++) {
+				if(this.articles[i] != null)
+					ar[i] = this.articles[i];
+				//counter++;
+			}
+			ar[count - 1] = article;
 			
-		} else {
-			
+			this.articles = ar;
 		}
-	}
 
 	@Override
 	public String toString() {
