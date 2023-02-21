@@ -1,0 +1,5 @@
+Sea of Thieves - 60.00 - Microsoft - 2016 - true - 4
+Fortnite - 0.00 - Epic Games - 2017 - true - 100
+Minecraft - 29.99 - Microsoft - 2012 - false - survival
+Geometry Dash - 3.29 - Steam - 2012 - false - level mode
+Forza Horizon 5 - 59.99 - Microsoft - 2021 - true - 16
