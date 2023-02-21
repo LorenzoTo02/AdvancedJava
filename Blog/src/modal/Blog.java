@@ -6,7 +6,7 @@ public class Blog {
 
 	private String name;
 	private Article[] articles;
-	public static int count = 0;
+	private int count = 0;
 	
 	public Blog(String name) {
 		this.name = name;
