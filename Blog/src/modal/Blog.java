@@ -36,7 +36,6 @@ public class Blog {
 			for (int i = 0; i < this.articles.length; i++) {
 				if(this.articles[i] != null)
 					ar[i] = this.articles[i];
-				//counter++;
 			}
 			ar[count - 1] = article;
 			
