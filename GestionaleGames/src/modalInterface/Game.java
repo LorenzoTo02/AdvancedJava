@@ -4,7 +4,7 @@ public interface Game {
 
 	String getTitle();
 	double getPrice();
-	Store getStore();
+	String getStore();
 	int getYear();
 	
 }

@@ -8,9 +8,9 @@ public class App {
 
 	public static void main(String[] args) {
 				
-//		for (String string : GeneralCTRL.getData()) {
-//			System.out.println(string);
-//		}
+		for (String string : GeneralCTRL.getData()) {
+			System.out.println(string);
+		}
 		
 	}
 

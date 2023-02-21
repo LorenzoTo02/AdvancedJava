@@ -7,12 +7,12 @@ public abstract class GameImpl implements Game {
 	
 	private String title;
 	private double price;
-	private Store store;
+	private String store;
 	private int year;
 	boolean online;
 	
 	
-	public GameImpl(String title, double price, Store store, int year, boolean online) {
+	public GameImpl(String title, double price, String store, int year, boolean online) {
 		this.title = title;
 		this.price = price;
 		this.store = store;
@@ -41,12 +41,12 @@ public abstract class GameImpl implements Game {
 	}
 
 
-	public Store getStore() {
+	public String getStore() {
 		return store;
 	}
 
 
-	public void setStore(Store store) {
+	public void setStore(String store) {
 		this.store = store;
 	}
 

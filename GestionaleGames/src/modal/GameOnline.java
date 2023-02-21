@@ -6,7 +6,7 @@ public class GameOnline extends GameImpl{
 
 	int nPlayer;
 	
-	public GameOnline(String title, double price, Store store, int year, int nPlayer, boolean online) {
+	public GameOnline(String title, double price, String store, int year, int nPlayer, boolean online) {
 		super(title, price, store, year, online);
 		this.nPlayer = nPlayer;
 	}
