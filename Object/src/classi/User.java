@@ -1,10 +1,18 @@
 package classi;
 
-public class User {
+import java.util.Objects;
+
+public class User implements Cloneable{
+	
+	public static final String TAG = User.class.getName();
 
 	private String firstname;
 	private String lastname;
 	
+	public User() {
+		this.firstname = "";
+		this.lastname = "";
+	}
 	
 	public User(String firstname, String lastname) {
 		super();
@@ -12,6 +20,10 @@ public class User {
 		this.lastname = lastname;
 	}
 
+	public User(User src) {
+		this.firstname = src.firstname;
+		this.lastname = src.lastname;
+	}
 
 	public String getFirstname() {
 		return firstname;
@@ -61,6 +73,23 @@ public class User {
 		return this.firstname.equals(user.firstname) && this.lastname.equals(user.lastname);
 		
 	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(firstname, lastname);
+	}
+	
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		User dest = new User();
+		dest.firstname = this.firstname;
+		dest.lastname = this.lastname;
+		return dest;
+	}
+	
+	
+	
+	
 	
 	
 	
