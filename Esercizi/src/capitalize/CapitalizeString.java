@@ -6,7 +6,7 @@ public class CapitalizeString {
 
 	public static void main(String[] args) {
 		
-		String src = "mamma ho perso l'aereo e mio padre 50enne mi ha picchiato!";
+		String src = "eric 90cartman";
 		
 		System.out.println(capitalizeFirstChars(src));
 		
