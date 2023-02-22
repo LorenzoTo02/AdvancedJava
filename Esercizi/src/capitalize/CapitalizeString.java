@@ -6,7 +6,7 @@ public class CapitalizeString {
 
 	public static void main(String[] args) {
 		
-		String src = "eric 90cartman";
+		String src = "eric 90cartman canoniere6yeee_cat";
 		
 		System.out.println(capitalizeFirstChars(src));
 		
@@ -18,10 +18,8 @@ public class CapitalizeString {
 		
 		for (int i = 0; i < charArray.length; i++) {
 			if(i != 0) {
-				if(Character.isLetter(charArray[i-1]) && Character.isLetter(charArray[i])) {
-					
-				} else {
-					charArray[i] = Character.toUpperCase(charArray[i]);
+				if(!Character.isLetter(charArray[i-1])) {
+					charArray[i] = Character.toUpperCase(charArray[i]);				
 				}
 			} else {
 				if(Character.isLetter(charArray[i])) {
