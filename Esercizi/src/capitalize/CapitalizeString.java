@@ -1,12 +1,10 @@
 package capitalize;
 
-
-
 public class CapitalizeString {
 
 	public static void main(String[] args) {
 		
-		String src = "eric 90cartman canoniere6yeee_cat";
+		String src = " eric 90cartman";
 		
 		System.out.println(capitalizeFirstChars(src));
 		
@@ -14,11 +12,11 @@ public class CapitalizeString {
 	
 	public static String capitalizeFirstChars(String src) {
 		
-		char[] charArray = src.toCharArray();
+		char[] charArray = src.trim().toCharArray();
 		
 		for (int i = 0; i < charArray.length; i++) {
 			if(i != 0) {
-				if(!Character.isLetter(charArray[i-1])) {
+				if(!Character.isLetter(charArray[i-1]) && Character.isLetter(charArray[i])) {
 					charArray[i] = Character.toUpperCase(charArray[i]);				
 				}
 			} else {
